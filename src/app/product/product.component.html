@@ -1,0 +1,27 @@
+<div class="card">
+    <div class="card-header">
+        <img src={{product.image}} alt="" class="card-img-top">
+    </div>
+    
+    <div class="card-content">
+        <button (click)="addToCart();changePrice(product.price)">Add to cart</button>
+        <div class="title">
+            {{product.title}}
+        </div>
+        <div class="author">
+            {{product.author}}
+        </div>
+        <div class="price">
+           Rs.  {{product.price}}
+        </div>
+        <!-- <div>
+            {{product.title}}
+        </div>
+        <div>
+            {{product.author}}
+        </div>
+        <div>
+            {{product.price}}
+        </div> -->
+    </div>
+</div>

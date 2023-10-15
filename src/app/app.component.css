@@ -1,0 +1,69 @@
+input{
+    outline: none;
+    width: 50%;
+    height: 2em;
+    padding-left: 2%;
+    border-radius: 30px;
+    border: 1px solid grey;
+}
+#parent-container{
+    display: flex;
+    width: 100%;
+    height: auto;
+    /* border: 2px solid red; */
+    justify-content: space-around;
+    align-items: space-around;
+    flex-direction: column;
+}
+
+.search-container{
+    display: flex;
+    width: 100%;
+    height: 3em;
+    /* border: 2px solid red; */
+    justify-content: center;
+    align-items: center;
+}
+
+.rest{
+    display: flex;
+    width: 100%;
+    height: auto;
+    /* border: 2px solid blue; */
+    justify-content: space-around;
+    align-items: space-around;
+}
+#product-container{
+    display: flex;
+    width: 60%;
+    height: auto;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    padding: 2%;
+    /* border: 1px solid blue; */
+    gap: 3em;
+}
+
+#cart-container{
+    display: flex;
+    width: 40%;
+    height: auto;
+    flex: wrap;
+    /* justify-content: space-around; */
+    align-items: center;
+    padding: 2%;
+    /* border: 1px solid purple; */
+    flex-direction: column;
+}
+
+.total{
+    display: flex;
+    width: 90%;
+    height: 1.5em;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 2%;
+    justify-content: flex-end;
+    align-items: center;
+}

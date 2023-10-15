@@ -1,0 +1,14 @@
+<div id="parent-container" class="container-fluid">
+  <div class="search-container">
+    <input type="text" placeholder="Search with keywords" (input)="onSearchChange($any($event.target).value)">
+  </div>
+  <div class="rest">
+    <div id="product-container" class="container-fluid" >
+      <app-product *ngFor = "let book of products" [product]=book (myOutput)="addItem($event)" (priceEmit)="updatePrice($event)"></app-product>
+    </div>
+    <div id="cart-container" class="container-fluid">
+      <app-cart-item  *ngFor = "let item of cart" [product]=item (removeEmit)="removeItem($event)" (priceEmit)="updatePrice($event)"></app-cart-item>
+      <div class="total">Total : Rs. {{total}}</div>
+    </div>
+  </div>
+</div>

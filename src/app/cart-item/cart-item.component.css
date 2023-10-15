@@ -1,0 +1,62 @@
+.cart-card{
+    display: flex;
+    width: 25em;
+    height: auto;
+    margin-bottom: 1%;
+    /* border: 2px solid green; */
+}
+.image-holder{
+    display: flex;
+    width: 4em;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+.title-holder{
+    display: flex;
+    height: 4em;
+    width: 15em;
+    flex-wrap: wrap;
+    padding: 2%;
+    /* border: 2px solid purple; */
+    font-size: 0.8em;
+    flex-direction: column;
+    font-weight: bold;
+}
+span{
+    display: flex;
+    margin-top: 2%;
+    font-weight: 400;
+}
+.control{
+    display: flex;
+    height: 4em;
+    width: 8em;
+    /* bordeR: 2px solid blue; */
+    justify-self: flex-end;
+    align-items: center;
+}
+.addsub{
+    display: flex;
+    width: 3em;
+    aspect-ratio: 1/1;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.countHolder{
+    display: flex;
+    width: 4em;
+    height: 2em;
+    /* bordeR: 2px solid green; */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}

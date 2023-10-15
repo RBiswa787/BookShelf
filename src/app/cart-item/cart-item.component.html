@@ -1,0 +1,20 @@
+<div class="cart-card">
+    <img src={{product.image}} alt="" class="image-holder">
+    <div class="title-holder">
+        {{product.title}}
+        <span>
+            Rs. {{product.price}}
+        </span>
+    </div>
+    <div class="control">
+        <button class="addsub" (click)="decrement();changePrice(-product.price);" >
+            -
+        </button>
+        <div class="countHolder">
+            {{quantity}}
+        </div>
+        <button class="addsub" (click)="increment();changePrice(product.price);">
+            +
+        </button>
+    </div>
+</div>
